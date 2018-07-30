@@ -1,4 +1,4 @@
-<div class="container sticky-content">
+<!-- <div class="container sticky-content">
   <div class="row">
     <button type="button" routerLink="/register-participant" class="btn btn-primary btn-block">Register Participant</button>    
   </div>
@@ -8,7 +8,7 @@
   </div>
   <br/>
   <div class="row">
-    <button type="button"  class="btn btn-primary btn-block">Assign value to activiy</button> 
+    <button type="button" class="btn btn-primary btn-block">Assign value to activiy</button> 
   </div>
   <br/>
   <div class="row">
@@ -18,4 +18,25 @@
   <div class="row">
     <button type="button" routerLink="/assign-activity-neighbor-team" class="btn btn-primary btn-block">Assign activity to neighbor team</button> 
   </div>
-</div>
+</div> -->
+
+
+<mat-nav-list>
+  <a mat-list-item routerLink="/register-participant" (click)="onClose()">
+    <mat-icon>face</mat-icon>
+    <span class="nav-caption">Register Participant</span>
+  </a>
+  <a mat-list-item routerLink="/register-activity" (click)="onClose()">
+    <mat-icon>person</mat-icon>
+    <span class="nav-caption">Register Activity</span>
+  </a>
+  <a mat-list-item routerLink="/register-neighbor-team" (click)="onClose()">
+    <mat-icon>fitness_center</mat-icon>
+    <span class="nav-caption">Register Neighborhood Team</span>
+  </a>
+  <a mat-list-item routerLink="/assign-activity-neighbor-team" (click)="onClose()">
+    <mat-icon>fitness_center</mat-icon>
+    <span class="nav-caption">Assign Activity to Neighborhood Team</span>
+  </a>
+</mat-nav-list>
+  

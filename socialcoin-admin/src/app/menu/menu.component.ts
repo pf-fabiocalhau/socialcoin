@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,10 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @Output() closeSidenav = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClose() {
+    this.closeSidenav.emit();
   }
 
 }

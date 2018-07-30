@@ -3,6 +3,27 @@
 }
 
 .sca-header {
-    height: 160px;
+    // height: 160px;
     flex: 0 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, 
+a:active {
+    color: lightgray;
+}
+
+.navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.title, .title img {
+    height: 100%;
+    text-align: center;
 }

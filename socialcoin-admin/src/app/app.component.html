@@ -1,3 +1,12 @@
-<sca-header></sca-header>
-<router-outlet></router-outlet>
-<sca-footer></sca-footer>
+<mat-sidenav-container>
+    <mat-sidenav role="navigation" #sidenav>
+        <sca-menu (closeSidenav)="sidenav.close()"></sca-menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <sca-header (sidenavToggle)="sidenav.toggle()"></sca-header>
+        <main>
+            <router-outlet></router-outlet>
+        </main>  
+        <sca-footer></sca-footer>      
+    </mat-sidenav-content>
+</mat-sidenav-container>    

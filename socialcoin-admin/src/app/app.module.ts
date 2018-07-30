@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -16,6 +18,7 @@ import { ShowActivityDetailComponent } from './show-activity-detail/show-activit
 import { AssignActivityParticipantComponent } from './assign-activity-participant/assign-activity-participant.component';
 import { CheckCompletedActivityComponent } from './check-completed-activity/check-completed-activity.component';
 import { AcceptRejectCompletedActivityComponent } from './accept-reject-completed-activity/accept-reject-completed-activity.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { AcceptRejectCompletedActivityComponent } from './accept-reject-complete
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
