@@ -12,6 +12,7 @@ import { ShowActivityDetailComponent } from './show-activity-detail/show-activit
 import { AssignActivityParticipantComponent } from './assign-activity-participant/assign-activity-participant.component';
 import { CheckCompletedActivityComponent } from './check-completed-activity/check-completed-activity.component';
 import { AcceptRejectCompletedActivityComponent } from './accept-reject-completed-activity/accept-reject-completed-activity.component';
+import { AssignParticipantNeighborTeamComponent } from './assign-participant-neighbor-team/assign-participant-neighbor-team.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/menu', pathMatch: 'full' },
@@ -23,12 +24,13 @@ const routes: Routes = [
   { path: 'register-activity', component: RegisterActivityComponent },
   { path: 'register-neighbor-team', component: RegisterNeighborTeamComponent },
   { path: 'assign-activity-neighbor-team', component: AssignActivityNeighborTeamComponent },
+  { path: 'assign-participant-neighbor-team', component: AssignParticipantNeighborTeamComponent },
   { path: 'assign-activity-participant', component: AssignActivityParticipantComponent },
   { path: 'show-activity-list', component: ShowActivityListComponent },
   { path: 'show-activity-detail', component: ShowActivityDetailComponent },
   { path: 'check-completed-activity', component: CheckCompletedActivityComponent },
   { path: 'accept-reject-completed-activity', component: AcceptRejectCompletedActivityComponent }
-]
+];
 
 @NgModule({
   exports: [

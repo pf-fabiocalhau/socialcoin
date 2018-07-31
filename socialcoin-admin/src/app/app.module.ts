@@ -18,6 +18,7 @@ import { ShowActivityDetailComponent } from './show-activity-detail/show-activit
 import { AssignActivityParticipantComponent } from './assign-activity-participant/assign-activity-participant.component';
 import { CheckCompletedActivityComponent } from './check-completed-activity/check-completed-activity.component';
 import { AcceptRejectCompletedActivityComponent } from './accept-reject-completed-activity/accept-reject-completed-activity.component';
+import { AssignParticipantNeighborTeamComponent } from './assign-participant-neighbor-team/assign-participant-neighbor-team.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AcceptRejectCompletedActivityComponent } from './accept-reject-complete
     ShowActivityDetailComponent,
     AssignActivityParticipantComponent,
     CheckCompletedActivityComponent,
-    AcceptRejectCompletedActivityComponent
+    AcceptRejectCompletedActivityComponent,
+    AssignParticipantNeighborTeamComponent
   ],
   imports: [
     BrowserModule,

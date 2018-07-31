@@ -1,25 +1,62 @@
-<div class="row">
-  <div class="col-11">
-    <h5>Register Neighbor Team</h5>
-  </div>
-  <div class="col-1">
-      <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="botton" title="Info">
-          <i>I</i>
-      </button>    
-  </div>
-</div>
-<form>
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name">
-  </div>
-  <div class="form-group">
-    <label for="description">Description</label>
-    <input type="textarea" class="form-control" id="description">
-  </div>
-  <div class="form-group row">
-    <div class="col">
-      <button type="button" class="btn btn-primary float-right">Save</button> 
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-10">
+      <h5>Register neighbor team</h5>
+    </div>
+    <div class="col-2">
+        <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="botton" title="Info">
+            <i>I</i>
+        </button>    
     </div>
   </div>
-</form>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="nameContact">Name of contact person</label>
+      <input type="text" class="form-control" id="nameContact">
+    </div>
+    <label>Telephone number of contact person</label>
+    <div class="form-row">
+      <div class="form-group col-2">
+        <select class="form-control">
+          <option>+55</option>
+          <option>+351</option>
+          <option>+1</option>
+        </select>
+      </div>
+      <div class="form-group col-10">
+        <input type="tel" class="form-control" id="telephoneContact">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="emailContact">Email of contact person</label>
+      <input type="email" class="form-control" id="emailContact">
+    </div>
+    <label for="location">Neighbor team Location</label>
+    <div class="form-row">
+      <div class="form-group col-8">
+        <input type="text" class="form-control" id="street" placeholder="Street Name">
+      </div>
+      <div class="form-group col-4">
+        <input type="number" class="form-control" id="streetBumber" placeholder="Number">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-4">
+        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code">
+      </div>
+      <div class="form-group col-8">
+        <input type="text" class="form-control" id="cityName" placeholder="City Name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col">
+        <button type="button" class="btn btn-primary float-right">Save</button> 
+      </div>
+    </div>
+  </form>
+</div>
+

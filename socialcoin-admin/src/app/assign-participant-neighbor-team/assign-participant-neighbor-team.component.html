@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-10">
-      <h5>Assign activity to neighbor team</h5>
+      <h5>Assign participant to neighbor team</h5>
     </div>
     <div class="col-2 text-right">
         <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="top" title="Info">
@@ -12,21 +12,21 @@
   <form>
     <div class="form-group">
       <mat-form-field class="w-100">
-        <mat-select placeholder="List activity with status 'Registered'" name="selectedActivity">
+        <mat-select placeholder="List participants" name="selectedParticipants">
           <!-- <mat-option *ngFor="let activity of activities" [value]="activity.value">
             {{activity.viewValue}}
           </mat-option> -->
           <mat-option [value]="1">
-            Activity 1
+            Participant 1
           </mat-option>
           <mat-option [value]="2">
-            Activity 2
+            Participant 2
           </mat-option>
           <mat-option [value]="3">
-            Activity 3
+            Participant 3
           </mat-option>
         </mat-select>
-        <mat-hint>Choose activity</mat-hint>
+        <mat-hint>Choose participant</mat-hint>
       </mat-form-field>
     </div>
     <div class="form-group">
