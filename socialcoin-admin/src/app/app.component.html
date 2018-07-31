@@ -1,6 +1,7 @@
 <mat-sidenav-container>
-    <mat-sidenav role="navigation" #sidenav>
-        <sca-menu (closeSidenav)="sidenav.close()"></sca-menu>
+    <mat-sidenav role="navigation" #sidenav [ngSwitch]="view">
+        <sca-ca-menu *ngSwitchCase="'ca'" (closeSidenav)="sidenav.close()"></sca-ca-menu>
+        <sca-nt-menu *ngSwitchCase="'nt'" (closeSidenav)="sidenav.close()"></sca-nt-menu>
     </mat-sidenav>
     <mat-sidenav-content>
         <sca-header (sidenavToggle)="sidenav.toggle()"></sca-header>

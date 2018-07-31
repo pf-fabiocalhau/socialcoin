@@ -17,8 +17,9 @@
           <mat-icon>menu</mat-icon>
       </button>
   </div>
-  <div class="col-6 title">
-    <a routerLink="/"><img src="assets/img/city.png" class="img-fluid"></a>
+  <div class="col-6 title" [ngSwitch]="view">
+    <a routerLink="/ca" *ngSwitchCase="'ca'"><img src="assets/img/city.png" class="img-fluid"></a>
+    <a routerLink="/nt" *ngSwitchCase="'nt'"><img src="assets/img/team.png" class="img-fluid"></a>
   </div>
   <div class="col-3 text-right">
     <a>
