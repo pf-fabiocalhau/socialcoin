@@ -11,45 +11,60 @@
   </div>
   <form>
     <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Name" type="text">
+      </mat-form-field>      
     </div>
     <div class="form-group">
-      <label for="nameContact">Name of contact person</label>
-      <input type="text" class="form-control" id="nameContact">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Name of contact person" type="text">
+      </mat-form-field>
     </div>
     <label>Telephone number of contact person</label>
     <div class="form-row">
       <div class="form-group col-2">
-        <select class="form-control">
-          <option>+55</option>
-          <option>+351</option>
-          <option>+1</option>
-        </select>
+        <mat-form-field class="w-100">
+          <mat-select placeholder="Prefix">
+            <mat-option value="+55">+55</mat-option>
+            <mat-option value="+351">+351</mat-option>
+            <mat-option value="+1">+1</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
       <div class="form-group col-10">
-        <input type="tel" class="form-control" id="telephoneContact">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Phone number" type="text">
+        </mat-form-field>
       </div>
     </div>
     <div class="form-group">
-      <label for="emailContact">Email of contact person</label>
-      <input type="email" class="form-control" id="emailContact">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Email of contact person" type="email">
+      </mat-form-field>
     </div>
     <label for="location">Neighbor team Location</label>
     <div class="form-row">
       <div class="form-group col-8">
-        <input type="text" class="form-control" id="street" placeholder="Street Name">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Street name" type="text">
+        </mat-form-field>
       </div>
       <div class="form-group col-4">
-        <input type="number" class="form-control" id="streetBumber" placeholder="Number">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Number" type="number" type="number">
+        </mat-form-field>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-4">
-        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Postal code" type="text">
+        </mat-form-field>
       </div>
       <div class="form-group col-8">
-        <input type="text" class="form-control" id="cityName" placeholder="City Name">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="City name" type="text">
+        </mat-form-field>
       </div>
     </div>
     <div class="form-group row">
