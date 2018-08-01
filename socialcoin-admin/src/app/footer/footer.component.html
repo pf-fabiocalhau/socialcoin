@@ -1,3 +1,4 @@
-<nav class="navbar fixed-bottom bg-light sca-footer d-flex justify-content-center">
-  <h1>Info and text</h1>
-</nav>
+<nav class="navbar fixed-bottom sca-footer bg-light d-flex justify-content-center" [ngSwitch]="view">
+  <h1 *ngSwitchCase="'ca'">City Administration</h1>
+  <h1 *ngSwitchCase="'nt'">Neighbor Team</h1>
+</nav> 

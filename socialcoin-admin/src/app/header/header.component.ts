@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.view = location.pathname.slice(1,3);
   }
+
   ngOnInit() {
   }
 
