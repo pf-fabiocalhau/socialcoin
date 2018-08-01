@@ -1,16 +1,63 @@
-<div class="row">
-  <div class="col-11">
-    <h5>Check completed activity</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5>Check completed activity</h5>
+    </div>
+    <div class="col-2 text-right">
+        <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="top" title="Info">
+            <i>I</i>
+        </button>    
+    </div>
   </div>
-  <div class="col-1">
-      <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="top" title="Info">
-          <i>I</i>
-      </button>    
+
+  <!-- <form>
+    <div class="form-group">
+      <label for="activities">Show activity by name</label>
+      <input type="search" class="form-control" id="activities">
+    </div>
+  </form> -->
+ 
+
+  <div class="row mt-3">
+    <div class="col-6 text-left">
+      <button mat-raised-button color="primary">Accept</button>
+    </div>
+    <div class="col-6 text-right">
+        <button mat-raised-button color="warn">Reject</button>
+    </div>
   </div>
+
+  <div class="row mt-3">
+    <div class="col">
+      <mat-form-field class="w-100">
+        <input type="text" matInput placeholder="Reason" required>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table mt-3">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">SC Value</th>
+            <th scope="col">Participant</th>
+            <th scope="col">Evidence</th>
+            <th scope="col">Date Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Gardening</th>
+            <td>Description of activity</td>
+            <td>100</td>
+            <td>John Doe</td>
+            <td>[image here]</td>
+            <td>2018-07-31</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
 </div>
-<form>
-  <div class="form-group">
-    <label for="activities">Show activity by name</label>
-    <input type="search" class="form-control" id="activities">
-  </div>
-</form>
