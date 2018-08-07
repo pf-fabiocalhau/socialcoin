@@ -20,6 +20,9 @@ import { MenuComponent as CaMenuComponent } from './ca/menu/menu.component';
 import { MenuComponent as NtMenuComponent} from './nt/menu/menu.component';
 import { HomeComponent as CaHomeComponent } from './ca/home/home.component';
 import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
+import { LoginComponent as CaLoginComponent} from './ca/login/login.component';
+import { LoginComponent as NtLoginComponent} from './nt/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
     AssignParticipantNeighborTeamComponent,
     CaMenuComponent,
     CaHomeComponent,
-    NtHomeComponent
+    NtHomeComponent,
+    CaLoginComponent,
+    NtLoginComponent
   ],
   imports: [
     BrowserModule,

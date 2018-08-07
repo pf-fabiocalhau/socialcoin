@@ -12,13 +12,17 @@ import { CheckCompletedActivityComponent } from './nt/check-completed-activity/c
 import { AcceptRejectCompletedActivityComponent } from './nt/accept-reject-completed-activity/accept-reject-completed-activity.component';
 import { AssignParticipantNeighborTeamComponent } from './ca/assign-participant-neighbor-team/assign-participant-neighbor-team.component';
 import { MenuComponent as CaMenuComponent } from './ca/menu/menu.component';
-import { HomeComponent as CaHomeCompenent } from './ca/home/home.component';
+import { LoginComponent as NtLoginComponent } from './nt/login/login.component';
+import { LoginComponent as CaLoginComponent } from './ca/login/login.component';
+import { HomeComponent as CaHomeComponent } from './ca/home/home.component';
 import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
 
 const routes: Routes = [
-  { path: 'ca', redirectTo: '/ca/home', pathMatch: 'full' },
-  { path: 'nt', redirectTo: '/nt/home', pathMatch: 'full' },
-  { path: 'ca/home', component: CaHomeCompenent},
+  { path: 'ca', redirectTo: '/ca/login', pathMatch: 'full' },
+  { path: 'nt', redirectTo: '/nt/login', pathMatch: 'full' },
+  { path: 'ca/login', component: CaLoginComponent},
+  { path: 'nt/login', component: NtLoginComponent},
+  { path: 'ca/home', component: CaHomeComponent},
   { path: 'nt/home', component: NtHomeComponent},
   { path: 'ca/menu', component: CaMenuComponent },
   { path: 'ca/register-participant', component: RegisterParticipantComponent },
