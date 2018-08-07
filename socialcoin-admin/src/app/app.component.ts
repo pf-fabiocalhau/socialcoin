@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-
-import { HeaderComponent } from './header/header.component';
-import { Router } from '@angular/router';
+import { Component, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'sca-root',

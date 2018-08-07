@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChildren, QueryList } from '@angular/core';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'sca-header',
@@ -7,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
-
+  
   view: string;
 
   constructor() {

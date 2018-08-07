@@ -8,6 +8,9 @@ import {
     MatListModule,
     MatSelectModule,
     MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
     MatCardModule
 } from '@angular/material';
 
@@ -21,6 +24,9 @@ import {
         MatListModule,
         MatSelectModule,
         MatInputModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
         MatCardModule
     ],
   exports: [
@@ -32,6 +38,9 @@ import {
         MatListModule,
         MatSelectModule,
         MatInputModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
         MatCardModule
     ],
 })
