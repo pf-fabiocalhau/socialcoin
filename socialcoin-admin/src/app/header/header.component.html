@@ -10,20 +10,39 @@
 </nav> -->
 
 
+<div *ngIf="view == 'nt';else ca">
+    <mat-toolbar class="bg-light sca-header navbar">
+        <div class="col-3">
+          <!-- <button mat-icon-button (click)="onToggleSidenav()">
+              <mat-icon>menu</mat-icon>
+          </button> -->
+        </div>
+        <div class="col-6 title">
+          <a routerLink="/nt"><img src="assets/img/city.png" class="img-fluid"></a>
+        </div>
+        <div class="col-3 text-right">
+          <a>
+            <mat-icon>exit_to_app</mat-icon>
+          </a>
+        </div>
+    </mat-toolbar>
+</div>
 
-<mat-toolbar class="bg-light sca-header navbar">
-  <div class="col-3">
-      <button mat-icon-button (click)="onToggleSidenav()">
-          <mat-icon>menu</mat-icon>
-      </button>
-  </div>
-  <div class="col-6 title" [ngSwitch]="view">
-    <a routerLink="/ca" *ngSwitchCase="'ca'"><img src="assets/img/city.png" class="img-fluid"></a>
-    <a routerLink="/nt" *ngSwitchCase="'nt'"><img src="assets/img/team.png" class="img-fluid"></a>
-  </div>
-  <div class="col-3 text-right">
-    <a>
-      <mat-icon>exit_to_app</mat-icon>
-    </a>
-  </div>
-</mat-toolbar>
+<ng-template #ca>
+  <mat-toolbar class="bg-light sca-header navbar">
+      <div class="col-3">
+          <button mat-icon-button (click)="onToggleSidenav()">
+              <mat-icon>menu</mat-icon>
+          </button>
+      </div>
+      <div class="col-6 title">
+        <a routerLink="/ca"><img src="assets/img/city.png" class="img-fluid"></a>
+      </div>
+      <div class="col-3 text-right">
+        <a>
+          <mat-icon>exit_to_app</mat-icon>
+        </a>
+      </div>
+    </mat-toolbar>
+</ng-template>
+

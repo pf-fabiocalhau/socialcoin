@@ -16,8 +16,7 @@ import { MenuComponent as CaMenuComponent } from './ca/menu/menu.component';
 
 const routes: Routes = [
   { path: 'ca', redirectTo: '/ca/menu', pathMatch: 'full' },
-  { path: 'nt', redirectTo: '/nt/menu', pathMatch: 'full' },
-  { path: 'nt/menu', component: NtMenuComponent},
+  { path: 'nt', redirectTo: '/nt/show-activity-list', pathMatch: 'full' },
   { path: 'ca/menu', component: CaMenuComponent },
   { path: 'ca/register-participant', component: RegisterParticipantComponent },
   { path: 'ca/register-activity', component: RegisterActivityComponent },

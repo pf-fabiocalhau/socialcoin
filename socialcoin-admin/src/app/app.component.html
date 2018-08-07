@@ -1,4 +1,4 @@
-<mat-sidenav-container>
+<!-- <mat-sidenav-container>
     <mat-sidenav role="navigation" #sidenav [ngSwitch]="view">
         <sca-ca-menu *ngSwitchCase="'ca'" (closeSidenav)="sidenav.close()"></sca-ca-menu>
         <sca-nt-menu *ngSwitchCase="'nt'" (closeSidenav)="sidenav.close()"></sca-nt-menu>
@@ -10,4 +10,27 @@
         </main>  
         <sca-footer></sca-footer>      
     </mat-sidenav-content>
-</mat-sidenav-container>    
+</mat-sidenav-container>     -->
+
+<div *ngIf="view == 'nt';else ca">
+    <sca-header></sca-header>
+        <main>
+            <router-outlet></router-outlet>
+        </main>  
+    <sca-footer></sca-footer>
+</div>
+
+<ng-template #ca>
+    <mat-sidenav-container>
+        <mat-sidenav role="navigation">
+            <sca-ca-menu (closeSidenav)="sidenav.close()"></sca-ca-menu>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <sca-header (sidenavToggle)="sidenav.toggle()"></sca-header>
+            <main>
+                <router-outlet></router-outlet>
+            </main>  
+            <sca-footer></sca-footer>      
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</ng-template>
