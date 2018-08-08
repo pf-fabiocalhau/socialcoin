@@ -16,6 +16,9 @@ import { LoginComponent as NtLoginComponent } from './nt/login/login.component';
 import { LoginComponent as CaLoginComponent } from './ca/login/login.component';
 import { HomeComponent as CaHomeComponent } from './ca/home/home.component';
 import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
+import { ManageParticipantsComponent } from './ca/manage-participants/manage-participants.component';
+import { ManageActivitiesComponent } from './ca/manage-activities/manage-activities.component';
+import { ManageNeighborTeamsComponent } from './ca/manage-neighbor-teams/manage-neighbor-teams.component';
 
 const routes: Routes = [
   { path: 'ca', redirectTo: '/ca/login', pathMatch: 'full' },
@@ -25,6 +28,9 @@ const routes: Routes = [
   { path: 'ca/home', component: CaHomeComponent},
   { path: 'nt/home', component: NtHomeComponent},
   { path: 'ca/menu', component: CaMenuComponent },
+  { path: 'ca/manage-participants', component: ManageParticipantsComponent },
+  { path: 'ca/manage-activities', component: ManageActivitiesComponent },
+  { path: 'ca/manage-neighbor-teams', component: ManageNeighborTeamsComponent },
   { path: 'ca/register-participant', component: RegisterParticipantComponent },
   { path: 'ca/register-activity', component: RegisterActivityComponent },
   { path: 'ca/register-neighbor-team', component: RegisterNeighborTeamComponent },

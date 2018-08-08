@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h5>Activities</h5>
+    </div>
+    <div class="col-2 text-right">
+        <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="top" title="Info">
+            <i>I</i>
+        </button>    
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-12">
+      <button type="button" color="primary" mat-raised-button routerLink="/ca/register-activity">New</button>  
+    </div>      
+  </div>
+
+  <mat-form-field class="w-100">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+
+  <div class="assign" *ngIf="selectedActivity">
+    <div class="row">
+      <div class="col-12">
+          Assign activity <b>"{{ selectedActivity }}"</b> to a neighbor team
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col-8">
+          <mat-form-field class="w-100" >
+            <mat-select placeholder="Assign to:" #neighborTeam>
+              <mat-option value="Team A">Team A</mat-option>
+              <mat-option value="Team B">Team B</mat-option>
+            </mat-select>
+          </mat-form-field>      
+        </div>
+        <div class="col-4 text-left">
+          <button type="button" color="primary" mat-raised-button (click)="closeAssign(neighborTeam.value)">Assign</button> 
+        </div>
+    </div>
+    
+  </div>
+  
+  <table mat-table [dataSource]="dataSource" class="w-100 table-striped table-bordered" matSort>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+    </ng-container>
+  
+    <!-- Status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+      <td mat-cell *matCellDef="let element"> {{ element.status }} </td>
+    </ng-container>
+  
+    <!-- Social Value Column -->
+    <ng-container matColumnDef="socialValue">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Social Value </th>
+      <td mat-cell *matCellDef="let element"> {{ element.socialValue | number }} </td>
+    </ng-container>
+  
+    <!-- Neighbor Team Column -->
+    <ng-container matColumnDef="neighborTeam">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Neighbor Team </th>
+      <td mat-cell *matCellDef="let element"> {{ element.neighborTeam }} <a (click)="onAssign(element.name)" *ngIf="!element.neighborTeam"><mat-icon>assignment_ind</mat-icon></a> </td>
+    </ng-container>
+
+    <!-- Edit Column -->
+    <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef> Edit </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink="/ca/register-activity"><mat-icon>edit</mat-icon></a> </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator
+    [pageSize]="5"
+    [pageSizeOptions]="[5, 10, 20]">
+  </mat-paginator>
+
+</div>
+
