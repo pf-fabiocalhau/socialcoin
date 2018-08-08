@@ -22,6 +22,9 @@ import { HomeComponent as CaHomeComponent } from './ca/home/home.component';
 import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
 import { LoginComponent as CaLoginComponent} from './ca/login/login.component';
 import { LoginComponent as NtLoginComponent} from './nt/login/login.component';
+import { ManageParticipantsComponent } from './ca/manage-participants/manage-participants.component';
+import { ManageActivitiesComponent } from './ca/manage-activities/manage-activities.component';
+import { ManageNeighborTeamsComponent } from './ca/manage-neighbor-teams/manage-neighbor-teams.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { LoginComponent as NtLoginComponent} from './nt/login/login.component';
     CaHomeComponent,
     NtHomeComponent,
     CaLoginComponent,
-    NtLoginComponent
+    NtLoginComponent,
+    ManageParticipantsComponent,
+    ManageActivitiesComponent,
+    ManageNeighborTeamsComponent
   ],
   imports: [
     BrowserModule,

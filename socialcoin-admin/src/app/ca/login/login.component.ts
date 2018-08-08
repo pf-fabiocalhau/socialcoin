@@ -9,11 +9,11 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
 
-  constructor(private router : Router) {
+  constructor(private router: Router) {
   }
 
-  username : string
-  password : string
+  username: string;
+  password: string;
 
   ngOnInit(): void {
   }

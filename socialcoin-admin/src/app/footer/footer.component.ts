@@ -10,9 +10,9 @@ export class FooterComponent implements OnInit {
   view: string;
 
   constructor() {
-    this.view = location.pathname.slice(1,3);
+    this.view = location.pathname.slice(1, 3);
   }
-  
+
   ngOnInit() {
   }
 
