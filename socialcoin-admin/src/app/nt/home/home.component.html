@@ -21,7 +21,7 @@
       </div>      
     </div>
     <div class="row">
-      <div class="col-9">
+      <div class="col-8">
           <mat-form-field class="w-100" >
             <mat-select placeholder="Assign to:" #participant>
               <mat-option value="John Doe">John Doe</mat-option>
@@ -30,7 +30,7 @@
           </mat-form-field>      
         </div>
         <div class="col-3 text-left">
-          <button type="button" color="primary" mat-raised-button (click)="closeAssign(participant.value)">Assign</button> 
+          <button mat-raised-button type="button" color="accent" (click)="closeAssign(participant.value)" class="mx-auto font-weight-bold m-3">Assign</button> 
         </div>
     </div>
     
