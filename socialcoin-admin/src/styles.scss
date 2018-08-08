@@ -1,1 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.mat-toolbar, .sca-footer, .mat-drawer {
+    background: #202124 !important;
+    padding: 10px !important;
+    color: #fff;
+}
+
+.mat-list-item-content {
+    color: #fff;
+}

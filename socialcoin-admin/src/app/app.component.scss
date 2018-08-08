@@ -4,3 +4,12 @@
 }
 
 .button-info {border-radius: 50%;}
+
+mat-sidenav-container, mat-sidenav, mat-sidenav-content {
+    height: 100%;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 75px;
+}

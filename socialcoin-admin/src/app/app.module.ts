@@ -1,26 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RegisterParticipantComponent } from './register-participant/register-participant.component';
-import { RegisterActivityComponent } from './register-activity/register-activity.component';
-import { RegisterNeighborTeamComponent } from './register-neighbor-team/register-neighbor-team.component';
-import { AssignActivityNeighborTeamComponent } from './assign-activity-neighbor-team/assign-activity-neighbor-team.component';
-import { NtMenuComponent } from './nt-menu/nt-menu.component';
-import { ShowActivityListComponent } from './show-activity-list/show-activity-list.component';
-import { ShowActivityDetailComponent } from './show-activity-detail/show-activity-detail.component';
-import { AssignActivityParticipantComponent } from './assign-activity-participant/assign-activity-participant.component';
-import { CheckCompletedActivityComponent } from './check-completed-activity/check-completed-activity.component';
-import { AcceptRejectCompletedActivityComponent } from './accept-reject-completed-activity/accept-reject-completed-activity.component';
+import { RegisterParticipantComponent } from './ca/register-participant/register-participant.component';
+import { RegisterActivityComponent } from './ca/register-activity/register-activity.component';
+import { RegisterNeighborTeamComponent } from './ca/register-neighbor-team/register-neighbor-team.component';
+import { AssignActivityNeighborTeamComponent } from './ca/assign-activity-neighbor-team/assign-activity-neighbor-team.component';
+import { ShowActivityDetailComponent } from './nt/show-activity-detail/show-activity-detail.component';
+import { AssignActivityParticipantComponent } from './nt/assign-activity-participant/assign-activity-participant.component';
+import { CheckCompletedActivityComponent } from './nt/check-completed-activity/check-completed-activity.component';
+import { AcceptRejectCompletedActivityComponent } from './nt/accept-reject-completed-activity/accept-reject-completed-activity.component';
+import { AssignParticipantNeighborTeamComponent } from './ca/assign-participant-neighbor-team/assign-participant-neighbor-team.component';
+import { MenuComponent as CaMenuComponent } from './ca/menu/menu.component';
+import { MenuComponent as NtMenuComponent} from './nt/menu/menu.component';
+import { HomeComponent as CaHomeComponent } from './ca/home/home.component';
+import { HomeComponent as NtHomeComponent } from './nt/home/home.component';
+import { LoginComponent as CaLoginComponent} from './ca/login/login.component';
+import { LoginComponent as NtLoginComponent} from './nt/login/login.component';
+import { ManageParticipantsComponent } from './ca/manage-participants/manage-participants.component';
+import { ManageActivitiesComponent } from './ca/manage-activities/manage-activities.component';
+import { ManageNeighborTeamsComponent } from './ca/manage-neighbor-teams/manage-neighbor-teams.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     HeaderComponent,
     FooterComponent,
     RegisterParticipantComponent,
@@ -28,15 +37,25 @@ import { AcceptRejectCompletedActivityComponent } from './accept-reject-complete
     RegisterNeighborTeamComponent,
     AssignActivityNeighborTeamComponent,
     NtMenuComponent,
-    ShowActivityListComponent,
     ShowActivityDetailComponent,
     AssignActivityParticipantComponent,
     CheckCompletedActivityComponent,
-    AcceptRejectCompletedActivityComponent
+    AcceptRejectCompletedActivityComponent,
+    AssignParticipantNeighborTeamComponent,
+    CaMenuComponent,
+    CaHomeComponent,
+    NtHomeComponent,
+    CaLoginComponent,
+    NtLoginComponent,
+    ManageParticipantsComponent,
+    ManageActivitiesComponent,
+    ManageNeighborTeamsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

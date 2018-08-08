@@ -1,0 +1,77 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-10">
+      <h5>Register neighbor team</h5>
+    </div>
+    <div class="col-2">
+        <button type="button" class="btn btn-secondary button-info" data-toggle="tooltip" data-placement="botton" title="Info">
+            <i>I</i>
+        </button>    
+    </div>
+  </div>
+  <form>
+    <div class="form-group">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Name" type="text">
+      </mat-form-field>      
+    </div>
+    <div class="form-group">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Name of contact person" type="text">
+      </mat-form-field>
+    </div>
+    <label>Telephone number of contact person</label>
+    <div class="form-row">
+      <div class="form-group col-2">
+        <mat-form-field class="w-100">
+          <mat-select placeholder="Prefix">
+            <mat-option value="+55">+55</mat-option>
+            <mat-option value="+351">+351</mat-option>
+            <mat-option value="+1">+1</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-group col-10">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Phone number" type="text">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="form-group">
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Email of contact person" type="email">
+      </mat-form-field>
+    </div>
+    <label for="location">Neighbor team Location</label>
+    <div class="form-row">
+      <div class="form-group col-8">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Street name" type="text">
+        </mat-form-field>
+      </div>
+      <div class="form-group col-4">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Number" type="number" type="number">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-4">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Postal code" type="text">
+        </mat-form-field>
+      </div>
+      <div class="form-group col-8">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="City name" type="text">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col">
+        <button mat-raised-button type="button" color="accent" class="mx-auto font-weight-bold m-3 float-right">Save</button> 
+      </div>
+    </div>
+  </form>
+</div>
+

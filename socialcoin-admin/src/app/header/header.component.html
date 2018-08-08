@@ -1,26 +1,36 @@
-<nav class="navbar sticky-top bg-light sca-header">
-  <!-- <div class="d-flex flex-row">
-    <img src="assets/img/city.png" class="img-responsive">
-  </div>
-  
-  <!-- <div class="d-flex flex-row"> -->
-  <!-- <li class="nav-item">
-    asdasd
-  </li> -->
-  <!-- <div class="d-flex flex-row">
-      <h4>asdas</h4>
-  </div> --> 
-    <!-- <div class="p-2"><h4>CITY administration</h4></div>
-    <div class="p-2"><h4>H</h4></div>
-  </div>  -->
-  <!-- </ul> -->
+<div *ngIf="view == 'nt';else ca">
+    <mat-toolbar class="bg-light sca-header navbar">
+        <div class="col-3">
+          <!-- <button mat-icon-button (click)="onToggleSidenav()">
+              <mat-icon>menu</mat-icon>
+          </button> -->
+        </div>
+        <div class="col-6 title">
+          <a routerLink="/nt"><img src="assets/img/socialcoin_logo.png" class="img-fluid"></a>
+        </div>
+        <div class="col-3 text-right">
+          <a routerLink="/nt">
+            <mat-icon>exit_to_app</mat-icon>
+          </a>
+        </div>
+    </mat-toolbar>
+</div>
 
-  <ul class="nav flex-column">
-      <li class="nav-item">
-          <img src="assets/img/city.png" class="img-responsive">
-        </li>
-      <li class="nav-item">
-        <h4>Socialcoin</h4>
-      </li>
-    </ul>
-</nav>
+<ng-template #ca>
+  <mat-toolbar class="bg-light sca-header navbar">
+      <div class="col-3">
+          <button mat-icon-button (click)="onToggleSidenav()">
+              <mat-icon>menu</mat-icon>
+          </button>
+      </div>
+      <div class="col-6 title">
+        <a routerLink="/ca"><img src="assets/img/socialcoin_logo.png" class="img-fluid"></a>
+      </div>
+      <div class="col-3 text-right">
+        <a routerLink="/ca">
+          <mat-icon>exit_to_app</mat-icon>
+        </a>
+      </div>
+    </mat-toolbar>
+</ng-template>
+

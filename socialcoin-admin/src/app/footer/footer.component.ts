@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  view: string;
+
+  constructor() {
+    this.view = location.pathname.slice(1, 3);
+  }
 
   ngOnInit() {
   }
