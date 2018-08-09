@@ -9,6 +9,9 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ListActivitiesComponent } from './activities/list-activities/list-activities.component';
 import { DetailActivityComponent } from './activities/detail-activity/detail-activity.component';
 import { BalanceComponent } from './activities/balance/balance.component';
+import { ListActivitiesToolbarComponent } from './list-activities-toolbar/list-activities-toolbar.component';
+import { SimpleToolbarComponent } from './simple-toolbar/simple-toolbar.component';
+import { BackToLastPageToolbarComponent } from './back-to-last-page-toolbar/back-to-last-page-toolbar.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { BalanceComponent } from './activities/balance/balance.component';
     ToolbarComponent,
     ListActivitiesComponent,
     DetailActivityComponent,
-    BalanceComponent
+    BalanceComponent,
+    ListActivitiesToolbarComponent,
+    SimpleToolbarComponent,
+    BackToLastPageToolbarComponent
   ],
   imports: [
     BrowserModule,
