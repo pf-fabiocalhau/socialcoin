@@ -8,11 +8,11 @@ import { MatSidenav } from '@angular/material';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
-  
+
   view: string;
 
   constructor() {
-    this.view = location.pathname.slice(1,3);
+    this.view = location.pathname.slice(1, 3);
   }
 
   ngOnInit() {

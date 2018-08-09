@@ -1,0 +1,11 @@
+<mat-list>
+  <mat-list-item class="reverse-direction" *ngFor="let activity of dataSource" routerLink="/activity/detail">
+    <h2 matLine> {{activity.name}} </h2>
+    <p matLine>
+      <span [innerHTML]="activity.description"></span>
+    </p>
+    <img matListAvatar src="../../../assets/singlecoin.png" alt="Social Value" *ngIf="activity.socialValue < 50 && activity.status !== 'Completed'">
+    <img matListAvatar src="../../../assets/multiplecoin.png" alt="Social Value" *ngIf="activity.socialValue > 50 && activity.status !== 'Completed'">
+    <img matListAvatar src="../../../assets/completed.png" alt="Completed" *ngIf="activity.status === 'Completed'">
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,20 @@
+mat-list-item {
+    border-bottom: 1px solid #ccc;
+    height: 90px !important;
+    color: #9c9c9c !important;
+}
+
+mat-list-item h2 {
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    color: #000;
+}
+
+.mat-list .mat-list-item .mat-list-avatar {
+    border-radius: 0%;
+    width: auto;
+}
+
+.mat-list .mat-list-item .mat-list-item-content {
+    flex-direction: row-reverse !important;
+}

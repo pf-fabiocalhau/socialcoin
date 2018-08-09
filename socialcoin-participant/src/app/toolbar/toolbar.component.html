@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <mat-icon class="back-button" *ngIf="showBack()" (click)="backClicked()">arrow_back</mat-icon>
+  <span>Activiteiten</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <button mat-button routerLink="/activity/balance">SALDO</button>
+</mat-toolbar>
