@@ -15,7 +15,7 @@ export class ListActivitiesToolbarComponent implements OnInit {
   }
 
   showBack() {
-    if (this._location.path()) {
+    if (this._location.path() !== '/activity/list') {
       return true;
     }
     return false;

@@ -13,7 +13,6 @@ export class SimpleToolbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("simple");
     this.title =  "Saldo";
   }
 
