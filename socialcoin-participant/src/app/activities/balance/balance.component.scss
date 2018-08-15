@@ -1,0 +1,45 @@
+.balance-circle {
+    border-radius : 50%;
+    border: 5px solid black;
+    width: 230px;
+    height: 230px;  
+    background-color: #FFE9B7;
+}
+
+.balance-circle > div {
+    border-radius : 50%;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top: 7%; 
+    left: 0%; 
+    background-color: #FAB51D; 
+}
+
+.balance-circle > div > span {
+    color: #FFFFFF;
+    position: relative;
+    top: 30%; 
+    left: 25%;
+    font-size: 50px; 
+}
+
+.center div,span {
+    margin: 0 auto;
+}
+
+.center > div {
+    padding-top: 40px;
+}
+
+.center span {
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.but-left {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
